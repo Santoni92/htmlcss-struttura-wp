@@ -1,0 +1,14 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    padding:30px 100px 30px 100px;
+}
+
+header{
+    height: 100px;
+    background-color: violet;
+}
