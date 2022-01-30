@@ -4,75 +4,89 @@
     box-sizing: border-box;
 }   /*resetto il CSS*/
 
-body{
-    padding:0px 150px 30px 150px;
-    /*margin:auto;*/
+.clearfix::after{    /*così da non far collassare il div che contiene le tre sotto sezioni*/
+    content: " ";
+    clear: both;
+    display:table;
 }
 
 .container{ /*controllare*/
-    width: 80%;
-    /*height: 700px;*/
+    width: 70%;
     margin: 10px auto;
 }
 
 header{
-    height: 70px;
+    height: 50px;
     background-color: violet;
+    margin-bottom: 10px;
 }
 
-#section-1{
-    height:500px;
+.section-1{
     background-color: rgb(145, 145, 5);
-    margin-top:30px;
-    margin-bottom:30px;
+    margin-bottom: 10px;
 }
 
-#section-2{
+.debug .section-1{
     height: 500px;
+}
+
+.section-2{
     background-color: rgb(37, 34, 224);
     margin-bottom: 10px;
 }
 
-#section-2-top{
-    height:98px;
+.debug .section-2{
+    height: 500px;
+}
+
+.section-2-top{
     background-color: cyan;
-    margin-bottom:2px;
+    margin-bottom: 5px;
 }
 
-#section-2-bottom::after{ /*così da non far collassare il div che contiene le tre sotto sezioni*/
-    height: 400px;
-    content:" ";
-    display:table;
-    clear:both;
+.debug .section-2-top{
+    height: 195px;
 }
 
-#left{
+.left-col{
     width: 20%;
-    height:398px;
     background-color: cyan;
     float:left;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
 }
 
-#center{
-width:58%;
-height: 398px;
+.debug .left-col{
+    height: 295px;
+}
+
+.center-col{
+width:56%;
 background-color: cyan;
 float:left;
-margin-left:2px;
-margin-right:2px;
-margin-bottom:2px;
+margin-left:2%;
+margin-right:2%;
+margin-bottom: 5px;
+}
+.debug .center-col{
+    height: 295px;
 }
 
-#right{
+.right-col{
     width: 20%;
-    height: 398px;
     background-color: cyan;
     float:left;
-    margin-bottom:2px;
+    margin-bottom: 5px;
+}
+
+.debug .right-col{
+    height: 295px;
 }
 
 footer{
-    height: 30px;
     background-color: rgb(98, 3, 98);
+    margin-bottom: 2px;
+}
+
+.debug .footer{
+    height: 20px;
 }
