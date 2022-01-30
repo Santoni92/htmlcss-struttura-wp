@@ -1,6 +1,6 @@
 *{
-    margin:0px;
-    padding:0px;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }   /*resetto il CSS*/
 
@@ -10,9 +10,14 @@
     display:table;
 }
 
-.container{ /*controllare*/
+.container{ 
     width: 70%;
     margin: 10px auto;
+}
+
+.debug .container{  /*controllare*/
+    height:100%;
+    border:2px dashed red;
 }
 
 header{
@@ -32,7 +37,7 @@ header{
 
 .section-2{
     background-color: rgb(37, 34, 224);
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .debug .section-2{
@@ -82,11 +87,11 @@ margin-bottom: 5px;
     height: 295px;
 }
 
-footer{
+.footer{
     background-color: rgb(98, 3, 98);
-    margin-bottom: 2px;
 }
 
 .debug .footer{
     height: 20px;
+    /*border:2px dashed green;*/
 }
